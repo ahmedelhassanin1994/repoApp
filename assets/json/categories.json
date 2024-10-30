@@ -1,0 +1,230 @@
+[
+  {
+    "id": 99,
+    "name": "فلاتر",
+    "slug": "%d8%a3%d8%af%d9%88%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 2641,
+      "date_created": "2023-09-07T02:43:56",
+      "date_created_gmt": "2023-09-07T02:43:56",
+      "date_modified": "2023-09-07T02:43:56",
+      "date_modified_gmt": "2023-09-07T02:43:56",
+      "src": "https://firebasestorage.googleapis.com/v0/b/riverpod-d252e.appspot.com/o/category%20(1).png?alt=media&token=d77e3809-12dd-40eb-80ed-9a2068112191",
+      "name": "porto46-el-category-7",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 5,
+    "translations": {
+      "ar": 99,
+      "en": 61
+    },
+    "lang": "ar",
+    "has_children": false,
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories/99"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 95,
+    "name": " بوجيهات",
+    "slug": "%d8%a3%d9%85%d8%aa%d8%b9%d8%a9-%d8%a7%d9%84%d8%b3%d9%81%d8%b1",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 2642,
+      "date_created": "2023-09-07T02:43:58",
+      "date_created_gmt": "2023-09-07T02:43:58",
+      "date_modified": "2023-09-07T02:43:58",
+      "date_modified_gmt": "2023-09-07T02:43:58",
+      "src": "https://firebasestorage.googleapis.com/v0/b/riverpod-d252e.appspot.com/o/category%20(2).png?alt=media&token=6ce25e7a-49d9-4b8d-831f-b73aea0fff71",
+      "name": "porto46-el-category-8",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 1,
+    "translations": {
+      "ar": 95,
+      "en": 48
+    },
+    "lang": "ar",
+    "has_children": false,
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories/95"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "name": "بطاريات",
+    "slug": "%d8%a5%d8%b6%d8%a7%d8%a1%d8%a9",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 2637,
+      "date_created": "2023-09-07T02:43:50",
+      "date_created_gmt": "2023-09-07T02:43:50",
+      "date_modified": "2023-09-07T02:43:50",
+      "date_modified_gmt": "2023-09-07T02:43:50",
+      "src": "https://firebasestorage.googleapis.com/v0/b/riverpod-d252e.appspot.com/o/category%20(3).png?alt=media&token=a1c91144-641a-49db-94f3-25f65980f8b0",
+      "name": "porto46-el-category-3",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 1,
+    "translations": {
+      "ar": 94,
+      "en": 47
+    },
+    "lang": "ar",
+    "has_children": false,
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories/94"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 90,
+    "name": "سوائل",
+    "slug": "%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 2634,
+      "date_created": "2023-09-07T02:43:46",
+      "date_created_gmt": "2023-09-07T02:43:46",
+      "date_modified": "2023-09-07T02:43:46",
+      "date_modified_gmt": "2023-09-07T02:43:46",
+      "src": "https://firebasestorage.googleapis.com/v0/b/riverpod-d252e.appspot.com/o/category%20(4).png?alt=media&token=9172eb7c-7f1f-40b3-b440-a79a79cad41d",
+      "name": "porto46-el-category-11",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 10,
+    "translations": {
+      "ar": 90,
+      "en": 37
+    },
+    "lang": "ar",
+    "has_children": false,
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories/90"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "name": "عفشه",
+    "slug": "%d8%a7%d9%84%d8%a3%d8%ac%d9%87%d8%b2%d8%a9",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 2639,
+      "date_created": "2023-09-07T02:43:53",
+      "date_created_gmt": "2023-09-07T02:43:53",
+      "date_modified": "2023-09-07T02:43:53",
+      "date_modified_gmt": "2023-09-07T02:43:53",
+      "src": "https://firebasestorage.googleapis.com/v0/b/riverpod-d252e.appspot.com/o/category.png?alt=media&token=8e0e235f-608d-4872-96d7-9776215c3fb8",
+      "name": "porto46-el-category-5",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 6,
+    "translations": {
+      "ar": 88,
+      "en": 30
+    },
+    "lang": "ar",
+    "has_children": false,
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories/88"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 456,
+    "name": "فلاتر",
+    "slug": "%d8%a3%d8%af%d9%88%d8%a7%d8%aa",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 2641,
+      "date_created": "2023-09-07T02:43:56",
+      "date_created_gmt": "2023-09-07T02:43:56",
+      "date_modified": "2023-09-07T02:43:56",
+      "date_modified_gmt": "2023-09-07T02:43:56",
+      "src": "https://firebasestorage.googleapis.com/v0/b/riverpod-d252e.appspot.com/o/category%20(1).png?alt=media&token=d77e3809-12dd-40eb-80ed-9a2068112191",
+      "name": "porto46-el-category-7",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 5,
+    "translations": {
+      "ar": 99,
+      "en": 61
+    },
+    "lang": "ar",
+    "has_children": false,
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories/99"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  }
+]

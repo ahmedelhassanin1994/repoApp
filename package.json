@@ -1,0 +1,9 @@
+{
+  "name": "dim_store",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+   "beta-android": "bash scripts/prepare-js.sh; bash scripts/prepare-android.sh; bash scripts/beta-android.sh;",
+    "beta-ios": "bash scripts/prepare-js.sh; bash scripts/prepare-ios.sh; bash scripts/beta-ios.sh;"
+  }
+}

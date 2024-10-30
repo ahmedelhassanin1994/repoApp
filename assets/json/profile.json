@@ -1,0 +1,50 @@
+{
+  "user": {
+    "id": 2311,
+    "username": "ahmed2",
+    "nicename": "ahmed-elhassanin-5",
+    "email": "ahmed2@gmail.com",
+    "url": "",
+    "registered": "2023-09-19 14:49:45",
+    "displayname": "ahmed elhassanin",
+    "firstname": "ahmed",
+    "lastname": "elhassanin",
+    "nickname": "ahmed2",
+    "description": "",
+    "capabilities": {
+      "customer": true
+    },
+    "role": [
+      "customer"
+    ],
+    "shipping": {
+      "first_name": "ahmed",
+      "last_name": "elhassanin",
+      "company": "aa",
+      "address_1": "aaa",
+      "address_2": "aa",
+      "city": "cairo",
+      "state": "aaa",
+      "postcode": "AA",
+      "country": "SA",
+      "email": "",
+      "phone": "1111111"
+    },
+    "billing": {
+      "first_name": "ahmed",
+      "last_name": "elhassanin",
+      "company": "aa",
+      "address_1": "aaa",
+      "address_2": "aa",
+      "city": "cairo",
+      "state": "aaa",
+      "postcode": "AA",
+      "country": "SA",
+      "email": "ahmed2@gmail.com",
+      "phone": "1111111"
+    },
+    "avatar": "https://ethraabusiness.com/wp-content/uploads/2023/10/1697392038_1.jpeg",
+    "is_driver_available": false,
+    "dokan_enable_selling": ""
+  }
+}

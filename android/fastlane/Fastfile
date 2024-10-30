@@ -1,0 +1,43 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  desc "Build a development release APK"
+  lane :build_development_release do
+    sh "flutter build apk --flavor development --release --target lib/main_development.dart"
+  end
+
+  desc "Build a production release APK"
+  lane :build_production_release do
+    sh "flutter build apk --flavor production --release --target lib/main_production.dart"
+  end
+
+  desc "Prepare Android Buid and Distribute to Firebase App distribution"
+  lane :beta_android do
+  build_production_release
+  firebase_app_distribution(
+  app: "1:466294779525:android:32d22114c39403685183ec",
+   groups: "tests",
+   firebase_cli_token: "1//038vzN3jMuovaCgYIARAAGAMSNwF-L9IrcEa0nb6I-o9jHwH61KaaSoovgZjYcBVTJAE50lQUqoTwXwG-Onx1-ClUGVvbNATdeL0",
+   release_notes: "Lots of amazing new features to test out!",
+    apk_path: "/Users/ahmed.hassanien/Desktop/car_care/build/app/outputs/flutter-apk/app-production-release.apk",
+
+  )
+  end
+
+
+  end

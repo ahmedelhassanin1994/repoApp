@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "466294779525",
+    "project_id": "dimstore-79ed4",
+    "storage_bucket": "dimstore-79ed4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466294779525:android:32d22114c39403685183ec",
+        "android_client_info": {
+          "package_name": "com.dimofinf.dimStore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466294779525-i24mvjcv9530f3gl4hu2pgacuqp6m1m7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dimofinf.dimStore",
+            "certificate_hash": "e89dd8dcaf82b16501430a0e37039738947da936"
+          }
+        },
+        {
+          "client_id": "466294779525-l9r0mgfkk0ncb2bvkhjt24a2ek50v25n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dimofinf.dimStore",
+            "certificate_hash": "18658317ffbb85a88e45e6d52d5490b368413bcd"
+          }
+        },
+        {
+          "client_id": "466294779525-nhohmua70ap2nhg1msj1f5q994secejg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP8YlCzAmtUaB3QSC0yGGxws1DSNx5bQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466294779525-nhohmua70ap2nhg1msj1f5q994secejg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "466294779525-17jt4dukpu1dblte2ki9hu1vkfg08lmh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dimofinf.store",
+                "app_store_id": "1555872083"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466294779525:android:310b8d20de0db59d5183ec",
+        "android_client_info": {
+          "package_name": "com.dimofinf.dimStore.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466294779525-nhohmua70ap2nhg1msj1f5q994secejg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP8YlCzAmtUaB3QSC0yGGxws1DSNx5bQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466294779525-nhohmua70ap2nhg1msj1f5q994secejg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "466294779525-17jt4dukpu1dblte2ki9hu1vkfg08lmh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dimofinf.store",
+                "app_store_id": "1555872083"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

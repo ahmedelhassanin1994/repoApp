@@ -1,0 +1,74 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+ before_all do
+    setup_circle_ci
+  end
+  desc "Description of what the lane does"
+  lane :custom_lane do
+    print "Fast lane work successfullu on Ios"
+
+  end
+
+ desc "Create App on Apple developer portal and apple store connect"
+lane :creat_app do
+  produce(
+    username: 'ahmedelhassanin276@gmail.com',
+    app_identifier: 'com.dimofinf.dimStore',
+    app_name: 'Dim Store',
+    language: 'English',
+    app_version: '1.0',
+    sku: 'DimStore',
+    team_name: 'Mohammed Alkhayat (SA)',
+    )
+    end
+
+   desc "register Ios devices"
+   lane :register_ios_devices do
+   register_devices(
+             devices_file: "./fastlane/devices.txt",
+              team_name: 'Mohammed Alkhayat (SA)',
+               username: 'ahmedelhassanin276@gmail.com',
+         )
+      end
+
+  desc "Build Ios App"
+  lane :build_release_ios do
+#   register_ios_devices
+ match
+  gym(
+    workspace: "Runner.xcworkspace",
+    configuration: "Release-Production",
+    scheme: "Runner",
+  )
+end
+
+   desc "Build Ios and Publish to Firebase App distribution"
+   lane :beta_ios do
+   build_release_ios
+   firebase_app_distribution(
+    app: "1:466294779525:ios:7184fa50f5b392895183ec",
+   groups: "tests",
+   firebase_cli_token: "1//038vzN3jMuovaCgYIARAAGAMSNwF-L9IrcEa0nb6I-o9jHwH61KaaSoovgZjYcBVTJAE50lQUqoTwXwG-Onx1-ClUGVvbNATdeL0",
+   release_notes: "Lots of amazing new features to test out!",
+   ipa_path: "/Users/ahmed.hassanien/Desktop/car_care/ios/Release-Production.ipa",
+  )
+    build_app(scheme: "Dim Store")
+    upload_to_app_store
+  end
+end

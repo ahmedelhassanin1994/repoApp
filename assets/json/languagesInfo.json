@@ -1,0 +1,19 @@
+[
+
+  {
+    "name": "English",
+    "icon": "assets/images/en.png",
+    "code": "en",
+    "text": "English",
+    "storeViewCode": "en"
+  },
+
+  {
+    "name": "Arabic",
+    "icon": "assets/images/ar.png",
+    "code": "ar",
+    "text": "العربية",
+    "storeViewCode": "ar"
+  }
+
+]

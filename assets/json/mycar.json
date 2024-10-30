@@ -1,0 +1,27 @@
+{
+  "id": 3482,
+  "name_car": "Fiat Tipo 2023",
+  "Last_maintenance": [
+    {
+      "id": 1,
+      "name_ar": "اخر صيانة",
+      "name_en": "Last maintenance",
+      "value": "1,00,000 كيلو",
+      "img": "assets/images/maintenance.svg"
+    },
+    {
+      "id": 2,
+      "name_ar": "الزيت",
+      "name_en": "Oil",
+      "value": "50000 كيلو",
+      "img": "assets/images/oil.svg"
+    },
+    {
+      "id": 3,
+      "name_ar": "المسافة",
+      "name_en": "Distance",
+      "value": "50000 كيلو",
+      "img": "assets/images/distance.svg"
+    }
+  ]
+}

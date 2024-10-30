@@ -1,0 +1,2 @@
+Device ID	Device Name
+4346a0e0911f92b2463c1c37743791491b679908	Youssef’s iPhone

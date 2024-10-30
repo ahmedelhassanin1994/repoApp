@@ -1,0 +1,36 @@
+[
+  {
+    "currency": "USD",
+    "currencyCode": "USD"
+  },
+  {
+    "currency": "INR",
+    "currencyCode": "INR"
+  },
+  {
+
+    "currency": "VND",
+    "currencyCode": "VND"
+  },
+  {
+
+    "currency": "EUR",
+    "currencyCode": "EUR"
+  },
+  {
+    "currency": "Pound sterling",
+    "currencyCode": "GBP"
+
+  },
+  {
+    "currency": "SAR",
+    "currencyCode": "SAR"
+
+  },
+
+  {
+    "currency": "EG",
+    "currencyCode": "EGP"
+
+  }
+]

@@ -1,0 +1,370 @@
+[
+
+
+  {
+    "id": "cod",
+    "title": "كاش",
+    "description": "الدفع نقدا عند التسليم.",
+    "order": 2,
+    "enabled": true,
+    "method_title": "الدفع نقدًا عند الاستلام",
+    "img": "assets/json/cash.svg",
+    "method_description": "اجعل زبائنك يدفعون نقداً (أو بمعنى آخر) الدفع عند الإستلام.",
+    "method_supports": [
+      "products"
+    ],
+    "settings": {
+      "title": {
+        "id": "title",
+        "label": "العنوان",
+        "description": "وصف وسيلة الدفع الذي سوف يراه الزبون في صفحة إتمام الطلب.",
+        "type": "safe_text",
+        "value": "الدفع عند الاستلام",
+        "default": "الدفع نقدًا عند الاستلام",
+        "tip": "وصف وسيلة الدفع الذي سوف يراه الزبون في صفحة إتمام الطلب.",
+        "placeholder": ""
+      },
+      "instructions": {
+        "id": "instructions",
+        "label": "تعليمات",
+        "description": "التعليمات التي سيتم إضافتها إلى صفحة الشكر.",
+        "type": "textarea",
+        "value": "Pay with cash upon delivery.",
+        "default": "الدفع عند التسليم مباشرة.",
+        "tip": "التعليمات التي سيتم إضافتها إلى صفحة الشكر.",
+        "placeholder": ""
+      },
+      "enable_for_methods": {
+        "id": "enable_for_methods",
+        "label": "التفعيل فقط لطرق الشحن",
+        "description": "إذا كان الدفع عند الاستلام متاحاً لطرق معينة فقط، قم بإعداده من هنا. أو أتركه فارغاً لتفعيله لجميع طرق الشحن.",
+        "type": "multiselect",
+        "value": [
+          "flat_rate:1",
+          "local_pickup:2"
+        ],
+        "default": "",
+        "tip": "إذا كان الدفع عند الاستلام متاحاً لطرق معينة فقط، قم بإعداده من هنا. أو أتركه فارغاً لتفعيله لجميع طرق الشحن.",
+        "placeholder": "",
+        "options": {
+          "سعر ثابت": {
+            "flat_rate": "أي \"سعر ثابت\" من الطرق",
+            "flat_rate:1": "saudia arabia – Flat rate (رقم 1)"
+          },
+          "شحن مجاني": {
+            "free_shipping": "أي \"شحن مجاني\" من الطرق"
+          },
+          "إستلام محلي من المتجر": {
+            "local_pickup": "أي \"إستلام محلي من المتجر\" من الطرق",
+            "local_pickup:2": "saudia arabia – إستلام محلي من المتجر (رقم 2)"
+          }
+        }
+      },
+      "enable_for_virtual": {
+        "id": "enable_for_virtual",
+        "label": "قبول الدفع عند الإستلام إذا كان الطلب منتج افتراضي.",
+        "description": "",
+        "type": "checkbox",
+        "value": "yes",
+        "default": "yes",
+        "tip": "",
+        "placeholder": ""
+      }
+    },
+    "needs_setup": false,
+    "post_install_scripts": [],
+    "settings_url": "https://projects.dimofinf.net/wp-projects/E-APP/wp-admin/admin.php?page=wc-settings&tab=checkout&section=cod",
+    "connection_url": null,
+    "setup_help_text": null,
+    "required_settings_keys": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/payment_gateways/cod"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/payment_gateways"
+        }
+      ]
+    }
+  },
+  {
+    "id": "paytabs_all",
+    "title": "بطاقة خصم/ ائتمان",
+    "description": "ادفع بشكل آمن من خلال خوادم PayTabs الآمنة.",
+    "order": "",
+    "enabled": true,
+    "method_title": "Online payments powered by PayTabs",
+    "method_description": "PayTabs - All supported payment methods",
+    "img": "assets/json/credit_card.svg",
+    "method_supports": [
+      "products",
+      "refunds",
+      "pre-orders",
+      "tokenization",
+      "subscriptions",
+      "subscription_cancellation",
+      "subscription_suspension",
+      "subscription_reactivation",
+      "subscription_amount_changes",
+      "subscription_date_changes",
+      "multiple_subscriptions"
+    ],
+    "settings": {
+      "endpoint": {
+        "id": "endpoint",
+        "label": "PayTabs endpoint region",
+        "description": "Select your domain",
+        "type": "select",
+        "value": "EGY",
+        "default": "",
+        "tip": "Select your domain",
+        "placeholder": "",
+        "options": {
+          "ARE": "United Arab Emirates",
+          "SAU": "Saudi Arabia",
+          "OMN": "Oman",
+          "JOR": "Jordan",
+          "EGY": "Egypt",
+          "IRQ": "Iraq",
+          "PSE": "Palestine",
+          "GLOBAL": "Global"
+        }
+      },
+      "title": {
+        "id": "title",
+        "label": "Title",
+        "description": "This controls the title which the user sees during checkout.",
+        "type": "text",
+        "value": "Online payments powered by PayTabs",
+        "default": "Online payments powered by PayTabs",
+        "tip": "This controls the title which the user sees during checkout.",
+        "placeholder": ""
+      },
+      "profile_id": {
+        "id": "profile_id",
+        "label": "Profile ID",
+        "description": "Please enter the \"Profile ID\" of your PayTabs Merchant account.",
+        "type": "text",
+        "value": "130688",
+        "default": "",
+        "tip": "Please enter the \"Profile ID\" of your PayTabs Merchant account.",
+        "placeholder": ""
+      },
+      "server_key": {
+        "id": "server_key",
+        "label": "Server Key",
+        "description": "Please enter your PayTabs \"Server Key\". You can find it on your Merchant’s Portal",
+        "type": "text",
+        "value": "SLJ9MNGKLK-JHDDKLJDK2-KMLMTMLT9W",
+        "default": "",
+        "tip": "Please enter your PayTabs \"Server Key\". You can find it on your Merchant’s Portal",
+        "placeholder": ""
+      },
+      "client_key": {
+        "id": "client_key",
+        "label": "Client Key",
+        "description": "Please enter your PayTabs \"Client Key\". You can find it on your Merchant’s Portal",
+        "type": "text",
+        "value": "CKK2TD-BG2D6H-DDKB6D-7MRGV6",
+        "default": "",
+        "tip": "Please enter your PayTabs \"Client Key\". You can find it on your Merchant’s Portal",
+        "placeholder": ""
+      },
+      "hide_shipping": {
+        "id": "hide_shipping",
+        "label": "Hide shipping info",
+        "description": "Enable if you wish to hide Shipping info of the customer in PayTabs payment page.",
+        "type": "checkbox",
+        "value": "yes",
+        "default": "no",
+        "tip": "Enable if you wish to hide Shipping info of the customer in PayTabs payment page.",
+        "placeholder": ""
+      },
+      "status_success": {
+        "id": "status_success",
+        "label": "Captured Order status",
+        "description": "Set the Order status after successful payment.<br><strong>Warning</strong> Be very careful when you change the Default option because when you change it, you change the normal flow of the Order into WooCommerce system, you may encounter some consequences based on the new value you set",
+        "type": "select",
+        "value": "wc-completed",
+        "default": "",
+        "tip": "Set the Order status after successful payment.<br><strong>Warning</strong> Be very careful when you change the Default option because when you change it, you change the normal flow of the Order into WooCommerce system, you may encounter some consequences based on the new value you set",
+        "placeholder": "",
+        "options": {
+          "default": "Default (recommended option)",
+          "wc-pending": "بانتظار الدفع",
+          "wc-processing": "قيد التنفيذ",
+          "wc-refund-req": "Refund Requested",
+          "wc-on-hold": "قيد الإنتظار",
+          "wc-completed": "مُكتمل",
+          "wc-cancelled": "ملغي",
+          "wc-refunded": "مُسترّد",
+          "wc-failed": "فشل",
+          "wc-checkout-draft": "مسودة"
+        }
+      },
+      "status_failed": {
+        "id": "status_failed",
+        "label": "Failed Order status",
+        "description": "Set the Order status after failed payment.<br><strong>Warning</strong> Be very careful when you change the Default option because when you change it, you change the normal flow of the Order into WooCommerce system, you may encounter some consequences based on the new value you set",
+        "type": "select",
+        "value": "default",
+        "default": "",
+        "tip": "Set the Order status after failed payment.<br><strong>Warning</strong> Be very careful when you change the Default option because when you change it, you change the normal flow of the Order into WooCommerce system, you may encounter some consequences based on the new value you set",
+        "placeholder": "",
+        "options": {
+          "default": "Default (recommended option)",
+          "wc-pending": "بانتظار الدفع",
+          "wc-processing": "قيد التنفيذ",
+          "wc-refund-req": "Refund Requested",
+          "wc-on-hold": "قيد الإنتظار",
+          "wc-completed": "مُكتمل",
+          "wc-cancelled": "ملغي",
+          "wc-refunded": "مُسترّد",
+          "wc-failed": "فشل",
+          "wc-checkout-draft": "مسودة"
+        }
+      },
+      "ipn_enable": {
+        "id": "ipn_enable",
+        "label": "Allow IPN events",
+        "description": "<strong>https://projects.dimofinf.net/wp-projects/E-APP/?wc-api=wc_gateway_paytabs</strong><br>Copy the link provided and use it in the merchant's dashboard.<br>Supported events: <strong>Capture (Full)</strong>, <strong>Void (Full)</strong>, <strong>Refund (Full & Partial)</strong>.",
+        "type": "checkbox",
+        "value": "no",
+        "default": "",
+        "tip": "<strong>https://projects.dimofinf.net/wp-projects/E-APP/?wc-api=wc_gateway_paytabs</strong><br>Copy the link provided and use it in the merchant's dashboard.<br>Supported events: <strong>Capture (Full)</strong>, <strong>Void (Full)</strong>, <strong>Refund (Full & Partial)</strong>.",
+        "placeholder": ""
+      },
+      "restock_items": {
+        "id": "restock_items",
+        "label": "Restock refunded items (IPN)",
+        "description": "Refund isssued on PayTabs Dashboard will be reflected on your Store (if IPN option enabled), This option will Restock all the orders' items if the refund amount matched the remaining refund amount, So <strong>use carefully if there is a cross use between the Woo admin refund & PayTabs dashboard refund</strong>.",
+        "type": "checkbox",
+        "value": "yes",
+        "default": "yes",
+        "tip": "Refund isssued on PayTabs Dashboard will be reflected on your Store (if IPN option enabled), This option will Restock all the orders' items if the refund amount matched the remaining refund amount, So <strong>use carefully if there is a cross use between the Woo admin refund & PayTabs dashboard refund</strong>.",
+        "placeholder": ""
+      },
+      "failed_send_note": {
+        "id": "failed_send_note",
+        "label": "Send a note on payment failure",
+        "description": "Send a note to the customer if the Order fail due to payment failure, The note contains the failure reason returned from the payment gateway.",
+        "type": "checkbox",
+        "value": "no",
+        "default": "",
+        "tip": "Send a note to the customer if the Order fail due to payment failure, The note contains the failure reason returned from the payment gateway.",
+        "placeholder": ""
+      },
+      "theme_config_id": {
+        "id": "theme_config_id",
+        "label": "Theme config id",
+        "description": "Config id of the theme/payment page (if any) you want to open, You may find it in <strong>Dashboard > Developers > PayPage Settings (Themes)</strong>",
+        "type": "text",
+        "value": "",
+        "default": "",
+        "tip": "Config id of the theme/payment page (if any) you want to open, You may find it in <strong>Dashboard > Developers > PayPage Settings (Themes)</strong>",
+        "placeholder": ""
+      },
+      "alt_currency_enable": {
+        "id": "alt_currency_enable",
+        "label": "Enable alternative currency",
+        "description": "Display alternative currency equivalent in the payment page.",
+        "type": "checkbox",
+        "value": "no",
+        "default": "no",
+        "tip": "Display alternative currency equivalent in the payment page.",
+        "placeholder": ""
+      },
+      "alt_currency": {
+        "id": "alt_currency",
+        "label": "Alternative currency",
+        "description": "The alternative currency to be shown in the payment page, e.g. \"USD\", \"AED, \"SAR\"",
+        "type": "text",
+        "value": "",
+        "default": "",
+        "tip": "The alternative currency to be shown in the payment page, e.g. \"USD\", \"AED, \"SAR\"",
+        "placeholder": ""
+      },
+      "enable_tokenise": {
+        "id": "enable_tokenise",
+        "label": "Enable Tokenise",
+        "description": "Allow your customers to save their payment methods for later use.",
+        "type": "checkbox",
+        "value": "yes",
+        "default": "yes",
+        "tip": "Allow your customers to save their payment methods for later use.",
+        "placeholder": ""
+      },
+      "trans_type": {
+        "id": "trans_type",
+        "label": "Transaction Type",
+        "description": "Set the transaction type to Auth or Sale",
+        "type": "select",
+        "value": "sale",
+        "default": "sale",
+        "tip": "Set the transaction type to Auth or Sale",
+        "placeholder": "",
+        "options": {
+          "sale": "Sale",
+          "auth": "Auth"
+        }
+      },
+      "status_auth_success": {
+        "id": "status_auth_success",
+        "label": "Auth Order status",
+        "description": "Set the Order status if the Auth succeed.",
+        "type": "select",
+        "value": "default",
+        "default": "wc-on-hold",
+        "tip": "Set the Order status if the Auth succeed.",
+        "placeholder": "",
+        "options": {
+          "default": "Default (recommended option)",
+          "wc-pending": "بانتظار الدفع",
+          "wc-processing": "قيد التنفيذ",
+          "wc-refund-req": "Refund Requested",
+          "wc-on-hold": "قيد الإنتظار",
+          "wc-completed": "مُكتمل",
+          "wc-cancelled": "ملغي",
+          "wc-refunded": "مُسترّد",
+          "wc-failed": "فشل",
+          "wc-checkout-draft": "مسودة"
+        }
+      },
+      "payment_form": {
+        "id": "payment_form",
+        "label": "Payment form type",
+        "description": "Hosted form on PayTabs server is the secure solution of choice, While iFrame provides better customer experience (https strongly advised)",
+        "type": "select",
+        "value": "redirect",
+        "default": "redirect",
+        "tip": "Hosted form on PayTabs server is the secure solution of choice, While iFrame provides better customer experience (https strongly advised)",
+        "placeholder": "",
+        "options": {
+          "redirect": "Redirect to hosted form on PayTabs server",
+          "iframe": "iFrame payment form integrated into checkout"
+        }
+      }
+    },
+    "needs_setup": false,
+    "post_install_scripts": [],
+    "settings_url": "https://projects.dimofinf.net/wp-projects/E-APP/wp-admin/admin.php?page=wc-settings&tab=checkout&section=paytabs_all",
+    "connection_url": null,
+    "setup_help_text": null,
+    "required_settings_keys": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/payment_gateways/paytabs_all"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://projects.dimofinf.net/wp-projects/E-APP/ar/wp-json/wc/v3/payment_gateways"
+        }
+      ]
+    }
+  }
+]
