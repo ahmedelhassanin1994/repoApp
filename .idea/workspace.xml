@@ -11,10 +11,6 @@
       <change afterPath="$PROJECT_DIR$/test/features/home/data/repository/repositoryHome_impl.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test/features/home/domain/usecase/repos_usecase.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test/features/home/presentation/bloc/repos_cubitTest.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/repo_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/repo_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/.circleci/config.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/.gitattributes" beforeDir="false" />
