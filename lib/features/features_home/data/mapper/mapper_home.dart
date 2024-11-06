@@ -4,7 +4,9 @@
 
 
 import 'package:mvvm_project/core/common/extensions.dart';
+import 'package:mvvm_project/features/features_home/data/responeses/model_commits.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/model_repos.dart';
+import 'package:mvvm_project/features/features_home/domain/entities/commits_entities.dart';
 import 'package:mvvm_project/features/features_home/domain/entities/repos_entities.dart';
 
 const EMPTY="";
@@ -24,6 +26,13 @@ extension ReposDataMapper on ModelRepos?{
 
 
 
+extension CommitsDataMapper on ModelCommits?{
+
+   CommitsEntities toDomain(){
+    return CommitsEntities(this?.sha ?? EMPTY, this?.nodeId ?? EMPTY, this?.url ?? EMPTY, this?.commit?.message ?? EMPTY, this?.commit?.commentCount ?? ZERO);
+
+  }
+}
 
 
 

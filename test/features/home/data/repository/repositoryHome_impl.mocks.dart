@@ -8,11 +8,13 @@ import 'dart:async' as _i5;
 import 'package:hive/hive.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:mvvm_project/core/common/data/model/model_cache.dart' as _i3;
-import 'package:mvvm_project/core/common/network/network_info.dart' as _i7;
+import 'package:mvvm_project/core/common/network/network_info.dart' as _i8;
 import 'package:mvvm_project/features/features_home/data/data_source/local_data_source.dart'
-    as _i8;
+    as _i9;
 import 'package:mvvm_project/features/features_home/data/data_source/remote_data_source_home.dart'
     as _i4;
+import 'package:mvvm_project/features/features_home/data/responeses/model_commits.dart'
+    as _i7;
 import 'package:mvvm_project/features/features_home/data/responeses/model_repos.dart'
     as _i6;
 
@@ -66,12 +68,23 @@ class MockRemoteDataSourceHome extends _i1.Mock
         ),
         returnValue: _i5.Future<List<_i6.ModelRepos>>.value(<_i6.ModelRepos>[]),
       ) as _i5.Future<List<_i6.ModelRepos>>);
+
+  @override
+  _i5.Future<List<_i7.ModelCommits>> getCommits(String? name) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getCommits,
+          [name],
+        ),
+        returnValue:
+            _i5.Future<List<_i7.ModelCommits>>.value(<_i7.ModelCommits>[]),
+      ) as _i5.Future<List<_i7.ModelCommits>>);
 }
 
 /// A class which mocks [NetworkInfo].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockNetworkInfo extends _i1.Mock implements _i7.NetworkInfo {
+class MockNetworkInfo extends _i1.Mock implements _i8.NetworkInfo {
   MockNetworkInfo() {
     _i1.throwOnMissingStub(this);
   }
@@ -86,7 +99,7 @@ class MockNetworkInfo extends _i1.Mock implements _i7.NetworkInfo {
 /// A class which mocks [LocalDataSource].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockLocalDataSource extends _i1.Mock implements _i8.LocalDataSource {
+class MockLocalDataSource extends _i1.Mock implements _i9.LocalDataSource {
   MockLocalDataSource() {
     _i1.throwOnMissingStub(this);
   }

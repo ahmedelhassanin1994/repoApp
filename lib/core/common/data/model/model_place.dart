@@ -19,7 +19,7 @@ class Model_Place {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     if (this.predictions != null) {
-      data['predictions'] = this.predictions!.map((v) => v.toJson()).toList();
+      data['predictions'] = this.predictions.map((v) => v.toJson()).toList();
     }
     data['status'] = this.status;
     return data;

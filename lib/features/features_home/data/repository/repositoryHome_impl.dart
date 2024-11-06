@@ -12,6 +12,7 @@ import 'package:mvvm_project/features/features_home/data/data_source/remote_data
 import 'package:mvvm_project/features/features_home/data/mapper/mapper_home.dart';
 import 'package:mvvm_project/features/features_home/data/data_source/local_data_source.dart';
 import 'package:mvvm_project/features/features_home/data/responeses/model_repos.dart';
+import 'package:mvvm_project/features/features_home/domain/entities/commits_entities.dart';
 import 'package:mvvm_project/features/features_home/domain/entities/repos_entities.dart';
 import 'package:mvvm_project/features/features_home/domain/repository/repository_home.dart';
 
@@ -56,6 +57,25 @@ class RepositoryHomeImpl extends RepositoryHome {
 
   }
 
+  }
+
+  @override
+  Future<Either<Failure, List<CommitsEntities>>> getCommits(String name) async{
+    // TODO: implement getCommits
+
+    if (await _networkInfo.isConnected) {
+      try {
+        final response = await _remoteDataSource.getCommits(name);
+        List<CommitsEntities>? recipes=(response?.map((e) => e.toDomain()) ?? Iterable.empty()).cast<CommitsEntities>().toList();
+        return Right(recipes);
+
+      } catch (e) {
+        return Left(ErrorHandler.handle(e).failure);
+      }
+    } else {
+      return Left(DataSource.NI_INTERNET_CONNECTION.getFailure());
+
+    }
   }
 
 }

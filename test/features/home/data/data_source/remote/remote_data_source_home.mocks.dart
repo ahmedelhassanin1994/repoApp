@@ -8,6 +8,8 @@ import 'dart:async' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 import 'package:mvvm_project/features/features_home/data/network/apiHome.dart'
     as _i2;
+import 'package:mvvm_project/features/features_home/data/responeses/model_commits.dart'
+    as _i5;
 import 'package:mvvm_project/features/features_home/data/responeses/model_repos.dart'
     as _i4;
 
@@ -40,4 +42,19 @@ class MockApiHome extends _i1.Mock implements _i2.ApiHome {
         ),
         returnValue: _i3.Future<List<_i4.ModelRepos>>.value(<_i4.ModelRepos>[]),
       ) as _i3.Future<List<_i4.ModelRepos>>);
+
+  @override
+  _i3.Future<List<_i5.ModelCommits>> getCommits(
+    String? name, {
+    String? per_page = r'3',
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getCommits,
+          [name],
+          {#per_page: per_page},
+        ),
+        returnValue:
+            _i3.Future<List<_i5.ModelCommits>>.value(<_i5.ModelCommits>[]),
+      ) as _i3.Future<List<_i5.ModelCommits>>);
 }
