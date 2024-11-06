@@ -5,40 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9b92780-5ebf-41c0-9c86-17f2ab9d4673" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/data/responeses/model_commits.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/domain/entities/commits_entities.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/domain/usecase/commits_usecase.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_commits/commits_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_commits/commits_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/widget/repo_card.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/repo_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/repo_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/integration_test/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_cache.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/data/model/model_cache.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/common/data/model/model_place.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/common/data/model/model_place.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/di.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/di.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/data_source/remote_data_source_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/data_source/remote_data_source_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/mapper/mapper_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/mapper/mapper_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/network/apiHome.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/data/repository/repositoryHome_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/data/repository/repositoryHome_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/entities/repos_entities.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/entities/repos_entities.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/features_home/domain/repository/repository_home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/domain/repository/repository_home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/resources/router/app_router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/resources/router/app_router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_commits/commits_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/bloc/bloc_commits/commits_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/features_home/presentation/repos_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/features_home/presentation/repos_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -10,8 +10,10 @@ import 'package:mvvm_project/core/resources/responsive.dart';
 import 'package:mvvm_project/core/resources/constants/color_manager.dart';
 import 'package:mvvm_project/core/resources/constants/value_manager.dart';
 import 'package:mvvm_project/features/features_home/domain/entities/repos_entities.dart';
+import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_commits/commits_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/bloc_repos/repos_cubit.dart';
 import 'package:mvvm_project/features/features_home/presentation/bloc/counter_cubit.dart';
+import 'package:mvvm_project/features/features_home/presentation/widget/repo_card.dart';
 import 'package:mvvm_project/features/features_home/presentation/widget/slider_widget.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -30,7 +32,8 @@ class _ReposScreen extends State<ReposScreen> {
 
 
    ReposCubit homeBloc= instance<ReposCubit>();
-  late final PageController _pageController;
+
+   late final PageController _pageController;
 
 
 
@@ -85,6 +88,7 @@ class _ReposScreen extends State<ReposScreen> {
        ),
      );
    }
+
 
 Widget getContentWidget(){
 
@@ -182,7 +186,7 @@ Widget getContentWidget(){
                                              onTap: (){
                                                showMenu(context,item);
                                              },
-                                             child: SliderWidget(item),
+                                             child: RepoCard(item),
                                            );
                                          },
                                        ),
@@ -209,10 +213,15 @@ Widget getContentWidget(){
 
    static void showMenu(BuildContext context,ReposEntities repo,
        {bool isLoading = false}) {
+     final bloc = BlocProvider.of<CommitsCubit>(context);
+
      showModalBottomSheet(
        context: context,
        builder: (BuildContext modalContext) {
-         return Container(
+         return BlocProvider.value(
+             value: bloc..get_featchCommits(repo.name),
+
+        child:  Container(
            width: AppSize.s100.w,
            decoration: BoxDecoration(
                color: ColorManager.white,
@@ -261,9 +270,30 @@ Widget getContentWidget(){
                    style: getMediumStyle(color: ColorManager.black,fontSize: FontSize.s16.sp),
                  ),
                ),
-             ],
+
+            BlocBuilder<CommitsCubit, CommitsState>
+              (builder: (BuildContext context, CommitsState state) {
+              if (state is CommitLoading) {
+                return Center(child: CircularProgressIndicator());
+              }else if(state is CommitLoaded){
+                return Expanded(
+                  child: ListView.builder(
+                    itemCount: state.commit.length,
+                    itemBuilder: (context, index) {
+                      final item = state.commit[index];
+                      return Container(
+                          margin: EdgeInsets.only(top:AppMargin.m2.h,left: AppMargin.m2.w,right: AppMargin.m2.w,bottom: AppMargin.m2.h),
+                          child: Text(item.msg,style: getBoldStyle(color: ColorManager.black,fontSize: FontSize.s16.sp),));
+                    },
+                  ),
+                );
+              } else{
+                return Container();
+              }})
+
+          ],
            ),
-         );
+         ));
        },
      );
    }

@@ -25,16 +25,19 @@ class CommitsCubit extends Cubit<CommitsState> {
       emit(CommitError(l)),
     }, (r) =>
     {
-      commitFutures[name]=r,
-      emit(CommitLoaded(r)),
+        commitFutures[name]=r,
+        getCommits(name),
+        emit(CommitLoaded(r)),
     });
   }
 
-  Future<void> getCommits(String name)async{
+  Future<List<CommitsEntities>> getCommits(String name)async{
     if (!commitFutures.containsKey(name)) {
-       getCommits(name);
+     return commitFutures[name]=[];
     }else{
-      emit(CommitLoaded(commitFutures[name] ?? []));
+      print("getCommits : ${commitFutures[name]}");
+      // emit(CommitLoaded(commitFutures[name] ?? []));
+      return commitFutures[name] ?? [];
     }
   }
 
