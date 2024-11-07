@@ -61,6 +61,7 @@ class RepoCard extends StatelessWidget {
               } else if (state is CommitLoaded) {
 
                  return Flexible(
+                   flex: 1,
                    child:FutureBuilder<List<CommitsEntities>>(
                       future: list,
                       builder: (context, snapshot) {

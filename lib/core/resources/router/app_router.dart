@@ -14,33 +14,15 @@ import '../../di.dart';
 
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
-    ReposCubit reposCubit= instance<ReposCubit>();
-    CounterCubit counterCubit= instance<CounterCubit>();
-    CommitsCubit commitsCubit= instance<CommitsCubit>();
+
 
     switch (settings.name) {
 
       case Routes.all_routs:
-       return _generateMaterialRoute(HomeScreen());
-      case Routes.home:
-        // return PageTransition(child: SplashScreen(), type: PageTransitionType.scale);
-        return MaterialPageRoute(
-          builder: (_) => MultiBlocProvider(
-            providers: [
+        return _generateMaterialRoute(HomeScreen());
 
-              BlocProvider<ReposCubit>(
-                  create: (BuildContext context) =>reposCubit
-              ),
-              BlocProvider<CounterCubit>(
-                  create: (BuildContext context) =>counterCubit
-              ),
-              BlocProvider<CommitsCubit>(
-                  create: (BuildContext context) =>commitsCubit
-              ),
-            ],
-            child:  ReposScreen(),
-          ),
-        );
+      case Routes.home:
+        return _generateMaterialRoute(ReposScreen());
 
       default:
         return unDefinedRoute();

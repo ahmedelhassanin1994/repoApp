@@ -11,7 +11,7 @@ class ReposCubit extends Cubit<ReposState> {
 
   late ReposUseCase reposUseCase;
 
-  ReposCubit(this.reposUseCase) : super(ReposInitial());
+  ReposCubit(this.reposUseCase) : super(ReposLoading());
 
   Future<void>get_featchData() async{
     emit(ReposLoading());

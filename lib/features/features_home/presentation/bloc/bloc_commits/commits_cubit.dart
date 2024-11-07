@@ -36,9 +36,11 @@ class CommitsCubit extends Cubit<CommitsState> {
      return commitFutures[name]=[];
     }else{
       print("getCommits : ${commitFutures[name]}");
-      // emit(CommitLoaded(commitFutures[name] ?? []));
+    // emit(CommitLoaded(commitFutures[name] ?? []));
       return commitFutures[name] ?? [];
     }
   }
+
+
 
 }

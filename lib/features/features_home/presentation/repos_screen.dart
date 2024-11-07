@@ -31,7 +31,6 @@ class ReposScreen extends StatefulWidget {
 class _ReposScreen extends State<ReposScreen> {
 
 
-   ReposCubit homeBloc= instance<ReposCubit>();
 
    late final PageController _pageController;
 
@@ -55,7 +54,6 @@ class _ReposScreen extends State<ReposScreen> {
 
    @override
    void dispose() {
-     homeBloc.close();
      _pageController.dispose();
      super.dispose();
    }
@@ -92,14 +90,12 @@ class _ReposScreen extends State<ReposScreen> {
 
 Widget getContentWidget(){
 
-     return   BlocProvider(
-         create: (context) =>homeBloc..get_featchData(),
-
-      child:  Scaffold(
+  final bloc = BlocProvider.of<ReposCubit>(context);
+  return  Scaffold(
            backgroundColor: ColorManager.white,
         appBar: AppBar(
           elevation:AppelEvation.E0,
-          automaticallyImplyLeading:false,
+          automaticallyImplyLeading:true,
           backgroundColor: ColorManager.white,
           title:Text(
             AppStrings.GITHUB,
@@ -115,7 +111,7 @@ Widget getContentWidget(){
 
                child: RefreshIndicator(
                    onRefresh: ()async {
-                     homeBloc.get_featchData();
+                     bloc.get_featchData();
                    },
                    child: Column(
                        mainAxisAlignment: MainAxisAlignment.center,
@@ -124,6 +120,7 @@ Widget getContentWidget(){
                          BlocBuilder<ReposCubit, ReposState>(
                            builder: (context, state) {
                              if (state is ReposLoading) {
+                               bloc.get_featchData();
                                return Center(child: CircularProgressIndicator());
                              } else if (state is ReposLoaaded) {
                                return Expanded(
@@ -207,7 +204,7 @@ Widget getContentWidget(){
                    )
                ),
              ),
-           ),
+
      );
 }
 

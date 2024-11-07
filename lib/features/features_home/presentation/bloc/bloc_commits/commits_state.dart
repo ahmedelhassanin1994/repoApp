@@ -17,9 +17,9 @@ final class CommitLoaded extends CommitsState {
   CommitLoaded(this.commit);
 }
 final class CommitError extends CommitsState {
-
   late Failure failure;
-
   CommitError(this.failure);
 }
+
+
 
